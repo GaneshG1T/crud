@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD</title>
+    <!-- Uncomment the following line if you want to use Bootstrap styles -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <!-- <script src='https://fontawesome.com/v5/icons/edit?f=classic&s=solid' crossorigin='anonymous'></script> -->
+    
+</head>
+<body style="background-color: #dcdbf8;">
+    <form autocomplete="off" onsubmit="onFormSubmit(event)">
+        <div>
+            <label for="fullName">Name:</label><br>
+            <input type="text" name="fullName" id="fullName">
+        </div>
+        <div>
+            <label for="empCode">EMP Code:</label><br>
+            <input type="text" name="empCode" id="empCode">
+        </div>
+        <div>
+            <label for="email">e-mail:</label><br>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="form_action--button"><br>
+            <button type="reset" value="Clear" class="Clear-btn">Clear</button>
+            <button type="submit" class="submit">Submit</button>
+        </div>
+    </form>
+    <div class="insert-row">
+        <table id="elist">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>EMP Code</th>
+                    <th>e-mail</th>
+                </tr>
+            </thead>
+            <tbody id="insertedData"></tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
